@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="logo">
+        <img src="./logo.png" widht="60" height="60">
+        <h1>COLUMBIA UNIVERSITY</h1><br> 
+        <h2>IN THE CITY OF NEWYORK</h2>
+    </div>
+        <div class="navigation">
+            <a class="active" href="./home.html">Home</a>
+            <a href="./acadamics.html">Academics</a>
+            <a href="./admission.html">Admissions</a>
+            <a href="./gallery.html">Gallery</a>
+          </div>
+        <div class="picture">
+            <img src="./columbia-university.webp" width="100%">
+            <div class="center draw1">Attracting the best minds in pursuit of greater human understanding, pioneering new discoveries, and service to society.</div>
+        </div>
+        <div class="form">
+            <h1>Admission Form</h1>
+            <p style="font-weight: bold;font-family:Georgia, Times, 'Times New Roman', serif; color: #0d4169;">Enter your first and last name</p>
+            <form style="font-family:Georgia, Times, 'Times New Roman', serif;">
+                <lable for="fname" >First Name:</lable><br>
+                <input type="text" id="fname" name="fname"><br>
+                <lable for="lname" >Last Name:</lable><br>
+                <input type="text" id="lname" name="lname"><br>
+                <p style="color: #0d4169;font-weight: bold;">Select your gender</p>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male" >Male</label><br>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female" >Female</label><br>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other" >Other</label><br>
+                <p style="color: #0d4169;font-weight: bold;">Select your Date of Birth</p>
+                <lable for="birthday" >Date of Birth:</lable>
+                <input type="date" id="birthday" name="birthday">
+                <p style="color: #0d4169;font-weight: bold;">Enter the GPA scored in 10th grade</p>
+                <lable for="gpa">GPA between 1-10:</lable>
+                <input type="number" id="gpa" name="gpa" min="0" max="10">
+                <p style="color: #0d4169;font-weight: bold;" >Enter the CGPA scored in High School</p>
+                <lable for="gpa" >CGPA between 1-10:</lable>
+                <input type="number" id="gpa" name="gpa" min="0" max="10">
+                <p style="color: #0d4169;font-weight: bold;" >Select your Course Preference</p>
+                <input type="radio" id="arch" name="course">
+                <label for="arch" >Architecture</label><br>
+                <input type="radio" id="bio" name="course">
+                <label for="bio" >Biomedical Engineering </label><br>
+                <input type="radio" id="cs" name="course">
+                <label for="cs" >Computer Science</label><br>
+                <input type="radio" id="eng" name="course">
+                <label for="enf" >English and Comprarative Literature</label><br>
+                <p style="color: #0d4169;font-weight: bold;">Do you want to Submit the form?</p>
+                <input type="submit" onclick="alert('Thankyou for submitting the form')">
+            </form>
+    </body>
+</html>
